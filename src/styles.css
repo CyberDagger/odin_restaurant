@@ -29,6 +29,9 @@ header nav button {
 
 #content {
     margin-top: 5rem;
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    scrollbar-gutter: stable both-edges;
 }
 
 .menu-item {
