@@ -6,7 +6,7 @@ export default function write() {
         pizza.classList.add("menu-item");
 
         const pizzaImage = document.createElement("img");
-        pizzaImage.setAttribute("src", "https://placehold.co/400");
+        pizzaImage.setAttribute("src", "https://placehold.co/200");
 
         const pizzaName = document.createElement("h2");
         pizzaName.textContent ="Paimon Pepperoni";
