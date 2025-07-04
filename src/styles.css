@@ -37,7 +37,8 @@ header nav button {
     scrollbar-gutter: stable both-edges;
     background-color: lightsalmon;
     margin: 5rem auto 0 auto;
-    max-width: 1200px;
+    padding: 0 max(calc(50vw - 600px), 0);
+    /*max-width: 1200px;*/
 }
 
 .menu-area {

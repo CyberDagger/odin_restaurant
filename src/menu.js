@@ -30,6 +30,10 @@ export default function write() {
 
     menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
     menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
+    menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
+    menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
+    menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
+    menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
 
     content.appendChild(menuArea);
 }
