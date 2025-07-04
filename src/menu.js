@@ -1,26 +1,35 @@
 export default function write() {
     content.innerHTML = "";
 
-    function makeItem() {
-        const pizza = document.createElement("div");
+    function makeItem(name, image, text, price) {
+        const pizza = document.createElement("article");
         pizza.classList.add("menu-item");
 
-        const pizzaImage = document.createElement("img");
-        pizzaImage.setAttribute("src", "https://placehold.co/200");
-
         const pizzaName = document.createElement("h2");
-        pizzaName.textContent ="Paimon Pepperoni";
+        pizzaName.textContent = name;
+
+        const pizzaImage = document.createElement("img");
+        pizzaImage.setAttribute("src", image);
 
         const pizzaDesc = document.createElement("p");
-        pizzaDesc.textContent = "Hottest slices you've ever seen.";
+        pizzaDesc.textContent = text;
 
-        pizza.appendChild(pizzaImage);
+        const pizzaPrice = document.createElement("button");
+        pizzaPrice.textContent = price + " sins";
+
         pizza.appendChild(pizzaName);
+        pizza.appendChild(pizzaImage);
         pizza.appendChild(pizzaDesc);
+        pizza.appendChild(pizzaPrice);
 
-        content.appendChild(pizza);
+        return pizza;
     }
 
-    makeItem();
-    makeItem();
+    const menuArea = document.createElement("section");
+    menuArea.classList.add("menu-area");
+
+    menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
+    menuArea.appendChild(makeItem("Paimon Pepperoni", "https://placehold.co/200", "Hottest slices you've ever seen.", 5));
+
+    content.appendChild(menuArea);
 }
