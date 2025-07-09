@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: lightsalmon;
+    background-color: tomato;
     overflow-y: scroll;
 }
 
@@ -29,7 +29,7 @@ header nav {
 header nav button {
     padding: 0.5rem 2rem;
     border: none;
-    background-color: lightsalmon;
+    background-color: tomato;
     border-radius: 1rem 1rem 0 0;
     font-size: 2rem;
     font-weight: bold;
@@ -37,21 +37,23 @@ header nav button {
 
 .wrapper {
     margin: 5rem auto 0 auto;
+    padding: 1.5rem 0;
     /*scrollbar-gutter: stable both-edges;*/
 }
 
 #content {
     justify-self: center;
-    width: min(1200px, 100%);
+    width: min(900px, 100%);
 }
 
 .menu-area {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
+    gap: 2rem;
+    /*padding-top: 0.67em;*/
 }
 
 .menu-item {
     border: 3px solid black;
-    margin: 2rem;
 }
