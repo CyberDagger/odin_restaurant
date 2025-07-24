@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: tomato;
+    background-color: orangered;
     overflow-y: scroll;
 }
 
@@ -29,7 +29,7 @@ header nav {
 header nav button {
     padding: 0.5rem 2rem;
     border: none;
-    background-color: tomato;
+    background-color: orangered;
     border-radius: 1rem 1rem 0 0;
     font-size: 2rem;
     font-weight: bold;
@@ -55,5 +55,12 @@ header nav button {
 }
 
 .menu-item {
-    border: 3px solid black;
+    background-color: lightsalmon;
+    border: 5px solid darkred;
+    border-radius: 5px;
+}
+
+.menu-item button {
+    width: 100%;
+    background-color: orange;
 }
