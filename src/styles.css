@@ -3,17 +3,17 @@
 }
 
 body {
-    background-color: orangered;
+    background-color: #FF7D29;
     overflow-y: scroll;
 }
 
 header {
     height: 5rem;
     width: 100vw;
-    background-color: darkred;
+    background-color: #8A0000;
     position: fixed;
     top: 0;
-    background-image: url("./images/header_flames.jpg");
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), #FF7D29), url("./images/header_flames.jpg");
     background-size: auto 100%;
     background-repeat: repeat-x;
 }
@@ -29,7 +29,7 @@ header nav {
 header nav button {
     padding: 0.5rem 2rem;
     border: none;
-    background-color: orangered;
+    background-color: #FF7D29;
     border-radius: 1rem 1rem 0 0;
     font-size: 2rem;
     font-weight: bold;
@@ -55,12 +55,19 @@ header nav button {
 }
 
 .menu-item {
-    background-color: lightsalmon;
-    border: 5px solid darkred;
+    background-color: #FCEF91;
+    border: 5px solid #7B4019;
     border-radius: 5px;
+}
+
+.menu-item h2 {
+    color: #3B060A;
+    text-align: center;
 }
 
 .menu-item button {
     width: 100%;
-    background-color: orange;
+    background-color: #EA2F14;
+    color: white;
+    font-weight: bold;
 }
