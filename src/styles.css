@@ -1,8 +1,9 @@
 :root {
-    --shade1: #FCEF91;
+    --shade1: #FFF287;
     --shade2: #FF7D29;
-    --shade3: #EA2F14;
-    --shade4: #8A0000;
+    --shade3: #E71D36;
+    --shade4: #772014;
+    --shade5: #3F220F;
 }
 
 * {
@@ -38,11 +39,12 @@ header nav button {
     border: none;
     background-color: var(--shade2);
     background: linear-gradient(var(--shade2), var(--shade2)) padding-box,
-        linear-gradient(var(--shade4), var(--shade3), var(--shade3), rgba(255,0,0,0)) border-box;
+        linear-gradient(var(--shade3), var(--shade3), var(--shade3), var(--shade2), rgba(255,0,0,0)) border-box;
     border-radius: 1rem 1rem 0 0;
     border: 3px solid transparent;
     font-size: 2rem;
     font-weight: bold;
+    color: var(--shade5);
 }
 
 .wrapper {
@@ -54,6 +56,10 @@ header nav button {
 #content {
     justify-self: center;
     width: min(900px, 100%);
+}
+
+h1 {
+    color: var(--shade5);
 }
 
 .menu-area {
@@ -68,10 +74,11 @@ header nav button {
     background-color: var(--shade1);
     border: 5px solid var(--shade4);
     border-radius: 5px;
+    box-shadow: 3px 5px 5px rgb(0 0 0 / 0.4);
 }
 
 .menu-item h2 {
-    color: #3B060A;
+    color: var(--shade5);
     text-align: center;
 }
 
@@ -80,4 +87,5 @@ header nav button {
     background-color: var(--shade3);
     color: white;
     font-weight: bold;
+    border: 5px outset var(--shade3);
 }
